@@ -1,0 +1,31 @@
+services:
+  plex:
+    image: lscr.io/linuxserver/plex:latest
+    container_name: plex
+    environment:
+      PUID: 99
+      PGID: 100
+      TZ: ${TZ:-UTC}
+      VERSION: docker
+    volumes:
+      - ${DATA_ROOT}:/config
+      - ${MEDIA_ROOT}:/data/media
+    ports:
+      - "32400:32400/tcp"   # Access to Plex Media Server - the only strictly required port
+      - "1900:1900/udp"     # Plex DLNA Server
+      - "5353:5353/udp"     # Bonjour/Avahi network discovery
+      - "8324:8324/tcp"     # Roku via Plex Companion
+      - "32410:32410/udp"   # GDM network discovery
+      - "32412:32412/udp"   # GDM network discovery
+      - "32413:32413/udp"   # GDM network discovery
+      - "32414:32414/udp"   # GDM network discovery
+      - "32469:32469/tcp"   # Plex DLNA Server
+    restart: unless-stopped
+
+# NOTE: this is linuxserver.io's own documented bridge-mode port list
+# (https://docs.linuxserver.io/images/docker-plex/). Even with all of
+# these published, local-network discovery (DLNA/GDM - used by some
+# clients to auto-find the server) can still be less reliable on a
+# bridge network than linuxserver's own recommended network_mode: host.
+# Switch to host networking if remote clients have trouble finding the
+# server automatically.

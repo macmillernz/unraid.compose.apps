@@ -1,0 +1,92 @@
+services:
+  postgresql:
+    container_name: authentik-postgres
+    env_file:
+      - .env
+    environment:
+      POSTGRES_DB: ${PG_DB:-authentik}
+      POSTGRES_PASSWORD: ${PG_PASS:?database password required}
+      POSTGRES_USER: ${PG_USER:-authentik}
+    healthcheck:
+      interval: 30s
+      retries: 5
+      start_period: 20s
+      test:
+        - CMD-SHELL
+        - pg_isready -d $${POSTGRES_DB} -U $${POSTGRES_USER}
+      timeout: 5s
+    image: docker.io/library/postgres:16-alpine
+    restart: unless-stopped
+    volumes:
+      - ${DATA_ROOT}/database:/var/lib/postgresql/data
+
+  server:
+    container_name: authentik-server
+    command: server
+    depends_on:
+      postgresql:
+        condition: service_healthy
+    env_file:
+      - .env
+    environment:
+      AUTHENTIK_POSTGRESQL__HOST: postgresql
+      AUTHENTIK_POSTGRESQL__NAME: ${PG_DB:-authentik}
+      AUTHENTIK_POSTGRESQL__PASSWORD: ${PG_PASS}
+      AUTHENTIK_POSTGRESQL__USER: ${PG_USER:-authentik}
+      AUTHENTIK_SECRET_KEY: ${AUTHENTIK_SECRET_KEY:?secret key required}
+    image: ${AUTHENTIK_IMAGE:-ghcr.io/goauthentik/server}:${AUTHENTIK_TAG:-2026.5.4}
+    ports:
+      - 0.0.0.0:${COMPOSE_PORT_HTTP:-9000}:9000
+      - 0.0.0.0:${COMPOSE_PORT_HTTPS:-9443}:9443
+    restart: unless-stopped
+    shm_size: 512mb
+    volumes:
+      - ${DATA_ROOT}/data:/data
+      - ${DATA_ROOT}/custom-templates:/templates
+
+  worker:
+    container_name: authentik-worker
+    command: worker
+    depends_on:
+      postgresql:
+        condition: service_healthy
+    env_file:
+      - .env
+    environment:
+      AUTHENTIK_POSTGRESQL__HOST: postgresql
+      AUTHENTIK_POSTGRESQL__NAME: ${PG_DB:-authentik}
+      AUTHENTIK_POSTGRESQL__PASSWORD: ${PG_PASS}
+      AUTHENTIK_POSTGRESQL__USER: ${PG_USER:-authentik}
+      AUTHENTIK_SECRET_KEY: ${AUTHENTIK_SECRET_KEY:?secret key required}
+    image: ${AUTHENTIK_IMAGE:-ghcr.io/goauthentik/server}:${AUTHENTIK_TAG:-2026.5.4}
+    restart: unless-stopped
+    shm_size: 512mb
+    user: root
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ${DATA_ROOT}/data:/data
+      - ${DATA_ROOT}/certbot/conf:/certs
+      - ${DATA_ROOT}/custom-templates:/templates
+
+  # Optional: issues/renews a Let's Encrypt cert via Cloudflare DNS-01.
+  # Remove this service entirely if you don't need it, or point the
+  # volumes/command at a different ACME/DNS setup. Requires a Cloudflare
+  # API token saved at ${DATA_ROOT}/certbot/cloudflare.ini in the form
+  # "dns_cloudflare_api_token = <token>".
+  certbot:
+    container_name: authentik-certbot
+    image: certbot/dns-cloudflare:latest
+    volumes:
+      - ${DATA_ROOT}/certbot/conf:/etc/letsencrypt
+      - ${DATA_ROOT}/certbot/logs:/var/log/letsencrypt
+      - ${DATA_ROOT}/certbot/cloudflare.ini:/etc/letsencrypt/cloudflare.ini:ro
+    command: >
+      certonly
+      --dns-cloudflare
+      --dns-cloudflare-credentials /etc/letsencrypt/cloudflare.ini
+      --dns-cloudflare-propagation-seconds 30
+      -d ${DOMAIN:?domain required}
+      -d *.${DOMAIN:?domain required}
+      --email ${LETSENCRYPT_EMAIL:?email required}
+      --agree-tos
+      --no-eff-email

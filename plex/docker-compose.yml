@@ -29,3 +29,13 @@ services:
 # bridge network than linuxserver's own recommended network_mode: host.
 # Switch to host networking if remote clients have trouble finding the
 # server automatically.
+
+# --- Example: put this stack on a custom/shared Docker network instead
+# of the default bridge network (e.g. to reach a reverse proxy or talk
+# to other stacks directly). Uncomment below, add the same "networks:"
+# list under every service above, and create the network first if it
+# doesn't already exist (docker network create <name>).
+#
+# networks:
+#   <name>:
+#     external: true

@@ -4,5 +4,5 @@
   "category": "Identity & Security",
   "description": "Open-source identity provider with SSO, MFA, and forward-auth/proxy support for your other self-hosted apps.",
   "launchUrl": "http://[IP]:9000/if/flow/initial-setup/",
-  "logoUrl": "https://raw.githubusercontent.com/ibracorp/app-logos/main/authentik/authentik.png"
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/authentik/logo.png"
 }

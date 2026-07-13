@@ -4,5 +4,5 @@
   "category": "Media",
   "description": "Self-hosted photo and video backup - a Google Photos alternative with mobile apps and facial recognition.",
   "launchUrl": "http://[IP]:2283",
-  "logoUrl": "https://raw.githubusercontent.com/imagegenius/templates/main/unraid/img/immich.png"
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/immich/logo.png"
 }

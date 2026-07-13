@@ -1,0 +1,8 @@
+{
+  "displayName": "Nextcloud",
+  "shortname": "nextcloud",
+  "category": "Productivity",
+  "description": "Self-hosted file sync, share, and collaboration platform - a private alternative to Dropbox/Google Drive.",
+  "launchUrl": "http://[IP]:8080",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/nextcloud/logo.png"
+}

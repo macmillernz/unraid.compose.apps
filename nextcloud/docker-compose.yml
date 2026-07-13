@@ -1,0 +1,69 @@
+# Adapted from the official example at
+# https://github.com/nextcloud/docker/tree/master/.examples/docker-compose/insecure/mariadb/apache
+# - named volumes replaced with ${DATA_ROOT} bind mounts, both env files
+# merged into this catalog's single .env convention, and the app port is
+# published on all interfaces instead of only 127.0.0.1 (that upstream
+# example assumes a TLS-terminating reverse proxy sits in front of it on
+# the same host - see the network example at the bottom of this file if
+# you want to do the same).
+services:
+  db:
+    container_name: nextcloud-db
+    image: mariadb:lts
+    command: --transaction-isolation=READ-COMMITTED
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:?database root password required}
+      MARIADB_AUTO_UPGRADE: 1
+      MARIADB_DISABLE_UPGRADE_BACKUP: 1
+    volumes:
+      - ${DATA_ROOT}/database:/var/lib/mysql
+
+  redis:
+    container_name: nextcloud-redis
+    image: redis:alpine
+    restart: unless-stopped
+
+  app:
+    container_name: nextcloud
+    image: nextcloud:apache
+    restart: unless-stopped
+    depends_on:
+      - db
+      - redis
+    ports:
+      - "${NEXTCLOUD_PORT:-8080}:80"
+    volumes:
+      - ${DATA_ROOT}/html:/var/www/html
+      # NOTE: the "cron" service below must use this exact same mount.
+    env_file:
+      - .env
+    environment:
+      MYSQL_HOST: db
+      REDIS_HOST: redis
+
+  # Nextcloud's own recommendation over webcron - runs background jobs on
+  # a schedule instead of only when a page happens to be loaded.
+  cron:
+    container_name: nextcloud-cron
+    image: nextcloud:apache
+    restart: unless-stopped
+    entrypoint: /cron.sh
+    depends_on:
+      - db
+      - redis
+    volumes:
+      - ${DATA_ROOT}/html:/var/www/html
+      # NOTE: must match the "app" service's volume above exactly.
+
+# --- Example: put this stack on a custom/shared Docker network instead
+# of the default bridge network (e.g. to reach a reverse proxy or talk
+# to other stacks directly). Uncomment below, add the same "networks:"
+# list under every service above, and create the network first if it
+# doesn't already exist (docker network create <name>).
+#
+# networks:
+#   <name>:
+#     external: true

@@ -4,5 +4,6 @@
   "category": "Downloads",
   "description": "Lightweight, cross-platform BitTorrent client with a plugin system and web UI.",
   "launchUrl": "http://[IP]:8112",
-  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/deluge/logo.png"
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/deluge/logo.png",
+  "autostart": false
 }

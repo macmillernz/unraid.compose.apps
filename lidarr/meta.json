@@ -4,5 +4,6 @@
   "category": "Media",
   "description": "Music collection manager - monitors artists, grabs new releases, and organizes your music library automatically.",
   "launchUrl": "http://[IP]:8686",
-  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/lidarr/logo.png"
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/lidarr/logo.png",
+  "autostart": false
 }

@@ -4,5 +4,6 @@
   "category": "Dashboard",
   "description": "An application dashboard - a single browser homepage with tiles linking out to all your other self-hosted apps.",
   "launchUrl": "http://[IP]:8080",
-  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/heimdall/logo.png"
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/heimdall/logo.png",
+  "autostart": false
 }

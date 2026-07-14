@@ -4,5 +4,6 @@
   "category": "Downloads",
   "description": "Open-source BitTorrent client with a full-featured web UI, no ads, no bundled bloat.",
   "launchUrl": "http://[IP]:8080",
-  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/qbittorrent/logo.png"
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/qbittorrent/logo.png",
+  "autostart": false
 }

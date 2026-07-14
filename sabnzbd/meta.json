@@ -4,5 +4,6 @@
   "category": "Downloads",
   "description": "Usenet (NZB) download client with automatic post-processing, notifications, and a web interface.",
   "launchUrl": "http://[IP]:8080",
-  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/sabnzbd/logo.png"
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/sabnzbd/logo.png",
+  "autostart": false
 }

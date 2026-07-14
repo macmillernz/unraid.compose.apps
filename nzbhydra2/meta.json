@@ -4,5 +4,6 @@
   "category": "Downloads",
   "description": "Meta search that aggregates usenet and torrent indexers behind one API, so apps only need to query one place.",
   "launchUrl": "http://[IP]:5076",
-  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/nzbhydra2/logo.png"
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/nzbhydra2/logo.png",
+  "autostart": false
 }

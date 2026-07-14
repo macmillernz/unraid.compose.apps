@@ -1,0 +1,8 @@
+{
+  "displayName": "Transmission",
+  "shortname": "transmission",
+  "category": "Downloads",
+  "description": "A fast, easy-to-use BitTorrent client with a clean web interface.",
+  "launchUrl": "http://[IP]:9091",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/transmission/logo.png"
+}

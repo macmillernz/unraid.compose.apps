@@ -1,0 +1,8 @@
+{
+  "displayName": "Syncthing",
+  "shortname": "syncthing",
+  "category": "Productivity",
+  "description": "Continuous, peer-to-peer file synchronization between your own devices - no cloud, no third party.",
+  "launchUrl": "http://[IP]:8384",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/syncthing/logo.png"
+}

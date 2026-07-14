@@ -1,0 +1,32 @@
+services:
+  jellyfin:
+    image: lscr.io/linuxserver/jellyfin:latest
+    container_name: jellyfin
+    environment:
+      PUID: 99
+      PGID: 100
+      TZ: ${TZ:-UTC}
+    volumes:
+      - ${DATA_ROOT}:/config
+      - ${TV_ROOT}:/data/tvshows
+      - ${MOVIES_ROOT}:/data/movies
+    ports:
+      - "8096:8096"
+      - "8920:8920"
+      - "7359:7359/udp"
+      - "1900:1900/udp"
+    restart: unless-stopped
+
+# NOTE: for hardware transcoding on an Intel iGPU, add:
+#   devices:
+#     - /dev/dri:/dev/dri
+
+# --- Example: put this stack on a custom/shared Docker network instead
+# of the default bridge network (e.g. to reach a reverse proxy or talk
+# to other stacks directly). Uncomment below, add the same "networks:"
+# list under every service above, and create the network first if it
+# doesn't already exist (docker network create <name>).
+#
+# networks:
+#   <name>:
+#     external: true

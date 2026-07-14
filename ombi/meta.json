@@ -1,0 +1,8 @@
+{
+  "displayName": "Ombi",
+  "shortname": "ombi",
+  "category": "Media",
+  "description": "Lets your users request movies and TV shows for your Plex/Emby/Jellyfin library, without giving them server access.",
+  "launchUrl": "http://[IP]:3579",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/ombi/logo.png"
+}

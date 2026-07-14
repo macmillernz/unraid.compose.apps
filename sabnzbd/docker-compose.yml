@@ -1,0 +1,25 @@
+services:
+  sabnzbd:
+    image: lscr.io/linuxserver/sabnzbd:latest
+    container_name: sabnzbd
+    environment:
+      PUID: 99
+      PGID: 100
+      TZ: ${TZ:-UTC}
+    volumes:
+      - ${DATA_ROOT}:/config
+      - ${DOWNLOADS_ROOT}:/downloads
+      - ${INCOMPLETE_DOWNLOADS_ROOT}:/incomplete-downloads
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+
+# --- Example: put this stack on a custom/shared Docker network instead
+# of the default bridge network (e.g. to reach a reverse proxy or talk
+# to other stacks directly). Uncomment below, add the same "networks:"
+# list under every service above, and create the network first if it
+# doesn't already exist (docker network create <name>).
+#
+# networks:
+#   <name>:
+#     external: true

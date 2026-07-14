@@ -1,0 +1,8 @@
+{
+  "displayName": "Duplicati",
+  "shortname": "duplicati",
+  "category": "Backup",
+  "description": "Encrypted, incremental backups to local disk, network shares, or cloud storage, with a web UI and scheduler.",
+  "launchUrl": "http://[IP]:8200",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/duplicati/logo.png"
+}

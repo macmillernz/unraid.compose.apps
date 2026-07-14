@@ -1,0 +1,27 @@
+services:
+  duplicati:
+    image: lscr.io/linuxserver/duplicati:latest
+    container_name: duplicati
+    environment:
+      PUID: 99
+      PGID: 100
+      TZ: ${TZ:-UTC}
+      SETTINGS_ENCRYPTION_KEY: ${SETTINGS_ENCRYPTION_KEY:?encryption key required}
+      DUPLICATI__WEBSERVICE_PASSWORD: ${DUPLICATI__WEBSERVICE_PASSWORD:?web UI password required}
+    volumes:
+      - ${DATA_ROOT}:/config
+      - ${BACKUPS_ROOT}:/backups
+      - ${SOURCE_ROOT}:/source
+    ports:
+      - "8200:8200"
+    restart: unless-stopped
+
+# --- Example: put this stack on a custom/shared Docker network instead
+# of the default bridge network (e.g. to reach a reverse proxy or talk
+# to other stacks directly). Uncomment below, add the same "networks:"
+# list under every service above, and create the network first if it
+# doesn't already exist (docker network create <name>).
+#
+# networks:
+#   <name>:
+#     external: true

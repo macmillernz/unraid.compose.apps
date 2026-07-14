@@ -1,0 +1,31 @@
+services:
+  syncthing:
+    image: lscr.io/linuxserver/syncthing:latest
+    container_name: syncthing
+    hostname: syncthing
+    environment:
+      PUID: 99
+      PGID: 100
+      TZ: ${TZ:-UTC}
+    volumes:
+      - ${DATA_ROOT}:/config
+      - ${SYNC_ROOT}:/data1
+    ports:
+      - "8384:8384"
+      - "22000:22000/tcp"
+      - "22000:22000/udp"
+      - "21027:21027/udp"
+    restart: unless-stopped
+
+# NOTE: Syncthing listens on all interfaces by default - set a GUI
+# password under Actions > Settings the first time you log in.
+
+# --- Example: put this stack on a custom/shared Docker network instead
+# of the default bridge network (e.g. to reach a reverse proxy or talk
+# to other stacks directly). Uncomment below, add the same "networks:"
+# list under every service above, and create the network first if it
+# doesn't already exist (docker network create <name>).
+#
+# networks:
+#   <name>:
+#     external: true

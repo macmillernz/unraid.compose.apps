@@ -1,0 +1,31 @@
+services:
+  deluge:
+    image: lscr.io/linuxserver/deluge:latest
+    container_name: deluge
+    environment:
+      PUID: 99
+      PGID: 100
+      TZ: ${TZ:-UTC}
+      DELUGE_LOGLEVEL: error
+    volumes:
+      - ${DATA_ROOT}:/config
+      - ${DOWNLOADS_ROOT}:/downloads
+    ports:
+      - "8112:8112"
+      - "6881:6881"
+      - "6881:6881/udp"
+      - "58846:58846"
+    restart: unless-stopped
+
+# NOTE: default web UI login is admin/deluge - change this immediately
+# under Preferences once logged in.
+
+# --- Example: put this stack on a custom/shared Docker network instead
+# of the default bridge network (e.g. to reach a reverse proxy or talk
+# to other stacks directly). Uncomment below, add the same "networks:"
+# list under every service above, and create the network first if it
+# doesn't already exist (docker network create <name>).
+#
+# networks:
+#   <name>:
+#     external: true

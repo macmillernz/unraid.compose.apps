@@ -1,0 +1,27 @@
+services:
+  calibre-web:
+    image: lscr.io/linuxserver/calibre-web:latest
+    container_name: calibre-web
+    environment:
+      PUID: 99
+      PGID: 100
+      TZ: ${TZ:-UTC}
+    volumes:
+      - ${DATA_ROOT}:/config
+      - ${BOOKS_ROOT}:/books
+    ports:
+      - "8083:8083"
+    restart: unless-stopped
+
+# NOTE: default web UI login is admin/admin123 - change this immediately.
+# Point /books at your existing Calibre library folder during setup.
+
+# --- Example: put this stack on a custom/shared Docker network instead
+# of the default bridge network (e.g. to reach a reverse proxy or talk
+# to other stacks directly). Uncomment below, add the same "networks:"
+# list under every service above, and create the network first if it
+# doesn't already exist (docker network create <name>).
+#
+# networks:
+#   <name>:
+#     external: true

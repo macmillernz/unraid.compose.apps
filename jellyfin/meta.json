@@ -1,0 +1,8 @@
+{
+  "displayName": "Jellyfin",
+  "shortname": "jellyfin",
+  "category": "Media",
+  "description": "Free, open-source media server for movies, TV, and music - a self-hosted alternative to Plex/Emby with no paywall.",
+  "launchUrl": "http://[IP]:8096",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/jellyfin/logo.png"
+}

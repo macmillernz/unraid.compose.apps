@@ -1,0 +1,30 @@
+services:
+  ubooquity:
+    image: lscr.io/linuxserver/ubooquity:latest
+    container_name: ubooquity
+    environment:
+      PUID: 99
+      PGID: 100
+      TZ: ${TZ:-UTC}
+      MAXMEM: 1024
+    volumes:
+      - ${DATA_ROOT}:/config
+      - ${BOOKS_ROOT}:/books
+      - ${COMICS_ROOT}:/comics
+    ports:
+      - "2202:2202"
+      - "2203:2203"
+    restart: unless-stopped
+
+# NOTE: set an admin password at http://<ip>:2203/ubooquity/admin on
+# first start, then browse your library at http://<ip>:2202/ubooquity/
+
+# --- Example: put this stack on a custom/shared Docker network instead
+# of the default bridge network (e.g. to reach a reverse proxy or talk
+# to other stacks directly). Uncomment below, add the same "networks:"
+# list under every service above, and create the network first if it
+# doesn't already exist (docker network create <name>).
+#
+# networks:
+#   <name>:
+#     external: true

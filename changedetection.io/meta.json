@@ -1,0 +1,9 @@
+{
+  "displayName": "changedetection.io",
+  "shortname": "changedetection.io",
+  "category": "Web Tools",
+  "description": "changedetection.io provides free, open-source web page monitoring, notification and change detection.",
+  "launchUrl": "http://[IP]:5000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/changedetection.io/logo.png",
+  "autostart": false
+}

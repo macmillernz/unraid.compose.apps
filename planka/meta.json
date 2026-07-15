@@ -1,0 +1,9 @@
+{
+  "displayName": "Planka",
+  "shortname": "planka",
+  "category": "Content Management",
+  "description": "Planka is an elegant open source project tracking tool.",
+  "launchUrl": "http://[IP]:1337",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/planka/logo.png",
+  "autostart": false
+}

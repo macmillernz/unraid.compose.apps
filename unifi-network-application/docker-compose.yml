@@ -1,0 +1,29 @@
+services:
+  unifi-network-application:
+    image: lscr.io/linuxserver/unifi-network-application:latest
+    container_name: unifi-network-application
+    environment:
+      PUID: 99
+      PGID: 100
+      TZ: ${TZ:-UTC}
+      MEM_LIMIT: ${MEM_LIMIT:-1024}
+      MEM_STARTUP: ${MEM_STARTUP:-1024}
+      MONGO_TLS: ${MONGO_TLS:-}
+    volumes:
+      - ${DATA_ROOT}:/config
+    ports:
+      - "8443:8443"
+      - "3478:3478/udp"
+      - "10001:10001/udp"
+      - "8080:8080"
+    restart: unless-stopped
+
+# --- Example: put this stack on a custom/shared Docker network instead
+# of the default bridge network (e.g. to reach a reverse proxy or talk
+# to other stacks directly). Uncomment below, add the same "networks:"
+# list under every service above, and create the network first if it
+# doesn't already exist (docker network create <name>).
+#
+# networks:
+#   <name>:
+#     external: true

@@ -1,0 +1,9 @@
+{
+  "displayName": "Raneto",
+  "shortname": "raneto",
+  "category": "Content Management",
+  "description": "Raneto - is an open source Knowledgebase platform that uses static Markdown files to power your Knowledgebase.",
+  "launchUrl": "http://[IP]:3000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/raneto/logo.png",
+  "autostart": false
+}

@@ -1,0 +1,25 @@
+services:
+  mylar3:
+    image: lscr.io/linuxserver/mylar3:latest
+    container_name: mylar3
+    environment:
+      PUID: 99
+      PGID: 100
+      TZ: ${TZ:-UTC}
+    volumes:
+      - ${DATA_ROOT}:/config
+      - ${COMICS_ROOT}:/comics
+      - ${DOWNLOADS_ROOT}:/downloads
+    ports:
+      - "8090:8090"
+    restart: unless-stopped
+
+# --- Example: put this stack on a custom/shared Docker network instead
+# of the default bridge network (e.g. to reach a reverse proxy or talk
+# to other stacks directly). Uncomment below, add the same "networks:"
+# list under every service above, and create the network first if it
+# doesn't already exist (docker network create <name>).
+#
+# networks:
+#   <name>:
+#     external: true

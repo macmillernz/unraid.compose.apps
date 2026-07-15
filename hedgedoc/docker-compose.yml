@@ -1,0 +1,28 @@
+services:
+  hedgedoc:
+    image: lscr.io/linuxserver/hedgedoc:latest
+    container_name: hedgedoc
+    environment:
+      PUID: 99
+      PGID: 100
+      TZ: ${TZ:-UTC}
+      CMD_URL_ADDPORT: ${CMD_URL_ADDPORT:-false}
+      CMD_PROTOCOL_USESSL: ${CMD_PROTOCOL_USESSL:-false}
+      CMD_PORT: ${CMD_PORT:-3000}
+      CMD_ALLOW_ORIGIN: ${CMD_ALLOW_ORIGIN:-['localhost']}
+      CMD_DB_DIALECT: ${CMD_DB_DIALECT:-}
+    volumes:
+      - ${DATA_ROOT}:/config
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+
+# --- Example: put this stack on a custom/shared Docker network instead
+# of the default bridge network (e.g. to reach a reverse proxy or talk
+# to other stacks directly). Uncomment below, add the same "networks:"
+# list under every service above, and create the network first if it
+# doesn't already exist (docker network create <name>).
+#
+# networks:
+#   <name>:
+#     external: true

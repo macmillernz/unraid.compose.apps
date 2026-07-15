@@ -1,0 +1,9 @@
+{
+  "displayName": "Vivaldi",
+  "shortname": "vivaldi",
+  "category": "Web Browser",
+  "description": "Vivaldi is a Norwegian freeware, cross-platform web browser with a built-in email client developed by Vivaldi Technologies.",
+  "launchUrl": "http://[IP]:3000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/vivaldi/logo.png",
+  "autostart": false
+}

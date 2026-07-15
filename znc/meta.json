@@ -1,0 +1,9 @@
+{
+  "displayName": "ZNC",
+  "shortname": "znc",
+  "category": "IRC",
+  "description": "ZNC is an IRC network bouncer or BNC. It can detach the client from the actual IRC server, and also from selected channels. Multiple clients from different locations can connect to a single ZNC account simultaneously and therefore appear under the same nickname on IRC.",
+  "launchUrl": "http://[IP]:6501",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/znc/logo.png",
+  "autostart": false
+}

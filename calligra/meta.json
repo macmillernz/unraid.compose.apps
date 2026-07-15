@@ -1,0 +1,9 @@
+{
+  "displayName": "Calligra",
+  "shortname": "calligra",
+  "category": "Documents",
+  "description": "Calligra is an office and graphic art suite by KDE. It is available for desktop PCs, tablet computers, and smartphones. It contains applications for word processing, spreadsheets, presentation, vector graphics, and editing databases.",
+  "launchUrl": "http://[IP]:3000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/calligra/logo.png",
+  "autostart": false
+}

@@ -1,0 +1,9 @@
+{
+  "displayName": "Ferdium",
+  "shortname": "ferdium",
+  "category": "Chat",
+  "description": "Ferdium is a desktop app that helps you organize how you use your favourite apps by combining them into one application.",
+  "launchUrl": "http://[IP]:3000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/ferdium/logo.png",
+  "autostart": false
+}

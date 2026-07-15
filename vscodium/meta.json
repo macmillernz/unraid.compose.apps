@@ -1,0 +1,9 @@
+{
+  "displayName": "VSCodium",
+  "shortname": "vscodium",
+  "category": "Programming",
+  "description": "VSCodium is a community-driven, freely-licensed binary distribution of Microsoft\u2019s editor VS Code.",
+  "launchUrl": "http://[IP]:3000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/vscodium/logo.png",
+  "autostart": false
+}

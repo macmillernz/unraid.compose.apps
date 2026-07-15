@@ -1,0 +1,25 @@
+services:
+  librewolf:
+    image: lscr.io/linuxserver/librewolf:latest
+    container_name: librewolf
+    environment:
+      PUID: 99
+      PGID: 100
+      TZ: ${TZ:-UTC}
+      LIBREWOLF_CLI: ${LIBREWOLF_CLI:-https://www.linuxserver.io/}
+    volumes:
+      - ${DATA_ROOT}:/config
+    ports:
+      - "3000:3000"
+      - "3001:3001"
+    restart: unless-stopped
+
+# --- Example: put this stack on a custom/shared Docker network instead
+# of the default bridge network (e.g. to reach a reverse proxy or talk
+# to other stacks directly). Uncomment below, add the same "networks:"
+# list under every service above, and create the network first if it
+# doesn't already exist (docker network create <name>).
+#
+# networks:
+#   <name>:
+#     external: true

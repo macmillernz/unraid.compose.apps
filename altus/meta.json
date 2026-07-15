@@ -1,0 +1,9 @@
+{
+  "displayName": "Altus",
+  "shortname": "altus",
+  "category": "Chat",
+  "description": "Altus is an Electron-based WhatsApp client with themes and multiple account support.",
+  "launchUrl": "http://[IP]:3000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/altus/logo.png",
+  "autostart": false
+}

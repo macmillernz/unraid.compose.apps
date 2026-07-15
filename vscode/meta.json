@@ -1,0 +1,9 @@
+{
+  "displayName": "VS Code",
+  "shortname": "vscode",
+  "category": "Programming",
+  "description": "VS Code is an integrated development environment developed by Microsoft. This container runs the full desktop application, for a web native version see Code Server.",
+  "launchUrl": "http://[IP]:3000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/vscode/logo.png",
+  "autostart": false
+}

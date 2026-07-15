@@ -1,0 +1,9 @@
+{
+  "displayName": "FFmpeg",
+  "shortname": "ffmpeg",
+  "category": "Media Tools",
+  "description": "A complete, cross-platform solution to record, convert and stream audio and video.",
+  "launchUrl": "http://[IP]",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/ffmpeg/logo.png",
+  "autostart": false
+}

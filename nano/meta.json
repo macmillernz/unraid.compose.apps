@@ -1,0 +1,9 @@
+{
+  "displayName": "Nano",
+  "shortname": "nano",
+  "category": "General",
+  "description": "Nano is a digital payment protocol designed to be accessible and lightweight, with a focus on removing inefficiencies present in other cryptocurrencies. With ultrafast transactions and zero fees on a secure, green and decentralized network, this makes Nano ideal for everyday transactions.",
+  "launchUrl": "http://[IP]:8075",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/nano/logo.png",
+  "autostart": false
+}

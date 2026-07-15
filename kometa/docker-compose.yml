@@ -1,0 +1,26 @@
+services:
+  kometa:
+    image: lscr.io/linuxserver/kometa:latest
+    container_name: kometa
+    environment:
+      PUID: 99
+      PGID: 100
+      TZ: ${TZ:-UTC}
+      KOMETA_CONFIG: ${KOMETA_CONFIG:-/config/config.yml}
+      KOMETA_TIMES: ${KOMETA_TIMES:-03:00}
+      KOMETA_RUN: ${KOMETA_RUN:-False}
+      KOMETA_TESTS: ${KOMETA_TESTS:-False}
+      KOMETA_NO_MISSING: ${KOMETA_NO_MISSING:-False}
+    volumes:
+      - ${DATA_ROOT}:/config
+    restart: unless-stopped
+
+# --- Example: put this stack on a custom/shared Docker network instead
+# of the default bridge network (e.g. to reach a reverse proxy or talk
+# to other stacks directly). Uncomment below, add the same "networks:"
+# list under every service above, and create the network first if it
+# doesn't already exist (docker network create <name>).
+#
+# networks:
+#   <name>:
+#     external: true

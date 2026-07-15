@@ -1,0 +1,9 @@
+{
+  "displayName": "VSCodium Web",
+  "shortname": "vscodium-web",
+  "category": "Programming",
+  "description": "VSCodium Web is a community-driven, freely-licensed binary distribution of the remote host web component of Microsoft's editor VS Code.",
+  "launchUrl": "http://[IP]:8000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/vscodium-web/logo.png",
+  "autostart": false
+}

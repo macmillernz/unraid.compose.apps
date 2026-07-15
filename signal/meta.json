@@ -1,0 +1,9 @@
+{
+  "displayName": "Signal",
+  "shortname": "signal",
+  "category": "Chat",
+  "description": "Signal is a messaging app with privacy at its core. It is free and easy to use, with strong end-to-end encryption that keeps your communication completely private.",
+  "launchUrl": "http://[IP]:3000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/signal/logo.png",
+  "autostart": false
+}

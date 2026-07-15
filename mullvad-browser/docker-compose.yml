@@ -1,0 +1,27 @@
+services:
+  mullvad-browser:
+    image: lscr.io/linuxserver/mullvad-browser:latest
+    container_name: mullvad-browser
+    environment:
+      PUID: 99
+      PGID: 100
+      TZ: ${TZ:-UTC}
+      LOCAL_NET: ${LOCAL_NET:-192.168.0.0/16}
+    volumes:
+      - ${DATA_ROOT}:/config
+    ports:
+      - "3000:3000"
+      - "3001:3001"
+    cap_add:
+      - NET_ADMIN
+    restart: unless-stopped
+
+# --- Example: put this stack on a custom/shared Docker network instead
+# of the default bridge network (e.g. to reach a reverse proxy or talk
+# to other stacks directly). Uncomment below, add the same "networks:"
+# list under every service above, and create the network first if it
+# doesn't already exist (docker network create <name>).
+#
+# networks:
+#   <name>:
+#     external: true

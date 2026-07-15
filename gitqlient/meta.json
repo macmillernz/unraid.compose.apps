@@ -1,0 +1,9 @@
+{
+  "displayName": "GitQlient",
+  "shortname": "gitqlient",
+  "category": "Programming",
+  "description": "GitQlient is a multi-platform Git client originally forked from QGit. Nowadays it goes beyond of just a fork and adds a lot of new functionality.",
+  "launchUrl": "http://[IP]:3000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/gitqlient/logo.png",
+  "autostart": false
+}

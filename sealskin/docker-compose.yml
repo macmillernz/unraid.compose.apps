@@ -1,0 +1,26 @@
+services:
+  sealskin:
+    image: lscr.io/linuxserver/sealskin:latest
+    container_name: sealskin
+    environment:
+      PUID: 99
+      PGID: 100
+      TZ: ${TZ:-UTC}
+      HOST_URL: ${HOST_URL:-IP or subdomain.doman.com}
+    volumes:
+      - ${DATA_ROOT}:/config
+      - ${STORAGE_ROOT}:/storage
+      - ${VAR_RUN_DOCKER_SOCK_ROOT}:/var/run/docker.sock
+    ports:
+      - "8443:8443"
+    restart: unless-stopped
+
+# --- Example: put this stack on a custom/shared Docker network instead
+# of the default bridge network (e.g. to reach a reverse proxy or talk
+# to other stacks directly). Uncomment below, add the same "networks:"
+# list under every service above, and create the network first if it
+# doesn't already exist (docker network create <name>).
+#
+# networks:
+#   <name>:
+#     external: true

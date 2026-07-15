@@ -1,0 +1,9 @@
+{
+  "displayName": "Faster Whisper",
+  "shortname": "faster-whisper",
+  "category": "Machine Learning",
+  "description": "Faster Whisper is a reimplementation of OpenAI's Whisper model using CTranslate2, which is a fast inference engine for Transformer models. This container provides a Wyoming protocol server for faster-whisper.",
+  "launchUrl": "http://[IP]:10300",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/faster-whisper/logo.png",
+  "autostart": false
+}

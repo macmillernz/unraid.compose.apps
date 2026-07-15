@@ -1,0 +1,9 @@
+{
+  "displayName": "Pydio Cells",
+  "shortname": "pydio-cells",
+  "category": "File Sharing",
+  "description": "Pydio Cells is the nextgen file sharing platform for organizations. It is a full rewrite of the Pydio project using the Go language following a micro-service architecture.",
+  "launchUrl": "http://[IP]:8080",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/pydio-cells/logo.png",
+  "autostart": false
+}

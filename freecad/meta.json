@@ -1,0 +1,9 @@
+{
+  "displayName": "Freecad",
+  "shortname": "freecad",
+  "category": "3D Modeling",
+  "description": "FreeCAD is a general-purpose parametric 3D computer-aided design (CAD) modeler and a building information modeling (BIM) software application with finite element method (FEM) support.",
+  "launchUrl": "http://[IP]:3000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/freecad/logo.png",
+  "autostart": false
+}

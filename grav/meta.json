@@ -1,0 +1,9 @@
+{
+  "displayName": "Grav",
+  "shortname": "grav",
+  "category": "Content Management",
+  "description": "Grav is a Fast, Simple, and Flexible, file-based Web-platform.",
+  "launchUrl": "http://[IP]:80",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/grav/logo.png",
+  "autostart": false
+}

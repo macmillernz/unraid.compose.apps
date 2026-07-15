@@ -1,0 +1,9 @@
+{
+  "displayName": "Wiki.js",
+  "shortname": "wikijs",
+  "category": "Content Management",
+  "description": "Wiki.js A modern, lightweight and powerful wiki app built on NodeJS.",
+  "launchUrl": "http://[IP]:3000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/wikijs/logo.png",
+  "autostart": false
+}

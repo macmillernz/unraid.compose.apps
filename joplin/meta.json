@@ -1,0 +1,9 @@
+{
+  "displayName": "Joplin",
+  "shortname": "joplin",
+  "category": "Content Management",
+  "description": "Joplin is a free, open source note taking and to-do application, which can handle a large number of notes organised into notebooks.",
+  "launchUrl": "http://[IP]:3000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/joplin/logo.png",
+  "autostart": false
+}

@@ -1,0 +1,9 @@
+{
+  "displayName": "Lollypop",
+  "shortname": "lollypop",
+  "category": "Music",
+  "description": "Lollypop is a lightweight modern music player designed to work excellently on the GNOME desktop environment.",
+  "launchUrl": "http://[IP]:3000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/lollypop/logo.png",
+  "autostart": false
+}

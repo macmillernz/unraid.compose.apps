@@ -1,0 +1,9 @@
+{
+  "displayName": "McMyAdmin 2",
+  "shortname": "mcmyadmin2",
+  "category": "General",
+  "description": "McMyAdmin 2 (linuxserver.io image).",
+  "launchUrl": "http://[IP]",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/mcmyadmin2/logo.png",
+  "autostart": false
+}

@@ -1,0 +1,28 @@
+services:
+  vscodium-web:
+    image: lscr.io/linuxserver/vscodium-web:latest
+    container_name: vscodium-web
+    environment:
+      PUID: 99
+      PGID: 100
+      TZ: ${TZ:-UTC}
+      CONNECTION_TOKEN: ${CONNECTION_TOKEN:?required}
+      CONNECTION_TOKEN_FILE: ${CONNECTION_TOKEN_FILE:-}
+      SUDO_PASSWORD: ${SUDO_PASSWORD:?required}
+      SUDO_PASSWORD_HASH: ${SUDO_PASSWORD_HASH:?required}
+      CODE_ARGS: ${CODE_ARGS:-}
+    volumes:
+      - ${DATA_ROOT}:/config
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+
+# --- Example: put this stack on a custom/shared Docker network instead
+# of the default bridge network (e.g. to reach a reverse proxy or talk
+# to other stacks directly). Uncomment below, add the same "networks:"
+# list under every service above, and create the network first if it
+# doesn't already exist (docker network create <name>).
+#
+# networks:
+#   <name>:
+#     external: true

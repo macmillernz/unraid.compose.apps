@@ -1,0 +1,37 @@
+services:
+  swag:
+    image: lscr.io/linuxserver/swag:latest
+    container_name: swag
+    environment:
+      PUID: 99
+      PGID: 100
+      TZ: ${TZ:-UTC}
+      SUBDOMAINS: ${SUBDOMAINS:-www,}
+      CERTPROVIDER: ${CERTPROVIDER:-}
+      CERT_PROFILE: ${CERT_PROFILE:-}
+      DNSPLUGIN: ${DNSPLUGIN:-cloudflare}
+      PROPAGATION: ${PROPAGATION:-}
+      EMAIL: ${EMAIL:-}
+      ONLY_SUBDOMAINS: ${ONLY_SUBDOMAINS:-false}
+      EXTRA_DOMAINS: ${EXTRA_DOMAINS:-}
+      STAGING: ${STAGING:-false}
+      DISABLE_F2B: ${DISABLE_F2B:-}
+      SWAG_AUTORELOAD: ${SWAG_AUTORELOAD:-}
+      SWAG_AUTORELOAD_WATCHLIST: ${SWAG_AUTORELOAD_WATCHLIST:-}
+    volumes:
+      - ${DATA_ROOT}:/config
+    ports:
+      - "443:443"
+    cap_add:
+      - NET_ADMIN
+    restart: unless-stopped
+
+# --- Example: put this stack on a custom/shared Docker network instead
+# of the default bridge network (e.g. to reach a reverse proxy or talk
+# to other stacks directly). Uncomment below, add the same "networks:"
+# list under every service above, and create the network first if it
+# doesn't already exist (docker network create <name>).
+#
+# networks:
+#   <name>:
+#     external: true

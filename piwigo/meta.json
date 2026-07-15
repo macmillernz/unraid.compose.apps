@@ -1,0 +1,9 @@
+{
+  "displayName": "Piwigo",
+  "shortname": "piwigo",
+  "category": "Photos",
+  "description": "Piwigo is a photo gallery software for the web that comes with powerful features to publish and manage your collection of pictures.",
+  "launchUrl": "http://[IP]:80",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/piwigo/logo.png",
+  "autostart": false
+}

@@ -1,0 +1,9 @@
+{
+  "displayName": "RustDesk",
+  "shortname": "rustdesk",
+  "category": "Remote Desktop",
+  "description": "RustDesk is a full-featured open source remote control alternative for self-hosting and security with minimal configuration.",
+  "launchUrl": "http://[IP]:3000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/rustdesk/logo.png",
+  "autostart": false
+}

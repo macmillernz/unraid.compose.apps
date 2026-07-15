@@ -1,0 +1,9 @@
+{
+  "displayName": "Bambustudio",
+  "shortname": "bambustudio",
+  "category": "3D Printing",
+  "description": "Bambu Studio is an open-source, cutting-edge, feature-rich slicing software. It contains project-based workflows, systematically optimized slicing algorithms, and an easy-to-use graphical interface, bringing users an incredibly smooth printing experience.",
+  "launchUrl": "http://[IP]:3000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/bambustudio/logo.png",
+  "autostart": false
+}

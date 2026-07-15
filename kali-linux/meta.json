@@ -1,0 +1,9 @@
+{
+  "displayName": "Kali Linux",
+  "shortname": "kali-linux",
+  "category": "Remote Desktop",
+  "description": "Kali Linux - is an Advanced Penetration Testing Linux distribution used for Penetration Testing, Ethical Hacking and network security assessments. KALI LINUX \u2122 is a trademark of OffSec.",
+  "launchUrl": "http://[IP]:3000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/kali-linux/logo.png",
+  "autostart": false
+}

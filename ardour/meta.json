@@ -1,0 +1,9 @@
+{
+  "displayName": "Ardour",
+  "shortname": "ardour",
+  "category": "Audio Processing",
+  "description": "Ardour is an open source, collaborative effort of a worldwide team including musicians, programmers, and professional recording engineers.",
+  "launchUrl": "http://[IP]:3000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/ardour/logo.png",
+  "autostart": false
+}

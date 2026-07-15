@@ -1,0 +1,29 @@
+services:
+  piper:
+    image: lscr.io/linuxserver/piper:latest
+    container_name: piper
+    environment:
+      PUID: 99
+      PGID: 100
+      TZ: ${TZ:-UTC}
+      LOCAL_ONLY: ${LOCAL_ONLY:-}
+      PIPER_LENGTH: ${PIPER_LENGTH:-1.0}
+      PIPER_NOISE: ${PIPER_NOISE:-0.667}
+      PIPER_NOISEW: ${PIPER_NOISEW:-0.333}
+      PIPER_SPEAKER: ${PIPER_SPEAKER:-0}
+      NO_STREAMING: ${NO_STREAMING:-}
+    volumes:
+      - ${DATA_ROOT}:/config
+    ports:
+      - "10200:10200"
+    restart: unless-stopped
+
+# --- Example: put this stack on a custom/shared Docker network instead
+# of the default bridge network (e.g. to reach a reverse proxy or talk
+# to other stacks directly). Uncomment below, add the same "networks:"
+# list under every service above, and create the network first if it
+# doesn't already exist (docker network create <name>).
+#
+# networks:
+#   <name>:
+#     external: true

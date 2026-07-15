@@ -1,0 +1,9 @@
+{
+  "displayName": "Rawtherapee",
+  "shortname": "rawtherapee",
+  "category": "Image Editor",
+  "description": "RawTherapee is a free, cross-platform raw image processing program!",
+  "launchUrl": "http://[IP]:3000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/rawtherapee/logo.png",
+  "autostart": false
+}

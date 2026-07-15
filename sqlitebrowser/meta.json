@@ -1,0 +1,9 @@
+{
+  "displayName": "DB Browser for SQLite",
+  "shortname": "sqlitebrowser",
+  "category": "Databases",
+  "description": "DB Browser for SQLite is a high quality, visual, open source tool to create, design, and edit database files compatible with SQLite.",
+  "launchUrl": "http://[IP]:3000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/sqlitebrowser/logo.png",
+  "autostart": false
+}

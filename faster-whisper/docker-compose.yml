@@ -1,0 +1,28 @@
+services:
+  faster-whisper:
+    image: lscr.io/linuxserver/faster-whisper:latest
+    container_name: faster-whisper
+    environment:
+      PUID: 99
+      PGID: 100
+      TZ: ${TZ:-UTC}
+      DEBUG: ${DEBUG:-}
+      LOCAL_ONLY: ${LOCAL_ONLY:-}
+      WHISPER_BEAM: ${WHISPER_BEAM:-1}
+      WHISPER_LANG: ${WHISPER_LANG:-auto}
+      WHISPER_MODEL: ${WHISPER_MODEL:-auto}
+    volumes:
+      - ${DATA_ROOT}:/config
+    ports:
+      - "10300:10300"
+    restart: unless-stopped
+
+# --- Example: put this stack on a custom/shared Docker network instead
+# of the default bridge network (e.g. to reach a reverse proxy or talk
+# to other stacks directly). Uncomment below, add the same "networks:"
+# list under every service above, and create the network first if it
+# doesn't already exist (docker network create <name>).
+#
+# networks:
+#   <name>:
+#     external: true

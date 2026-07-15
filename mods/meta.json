@@ -1,0 +1,9 @@
+{
+  "displayName": "Mods",
+  "shortname": "mods",
+  "category": "General",
+  "description": "Mods (linuxserver.io image).",
+  "launchUrl": "http://[IP]",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/mods/logo.png",
+  "autostart": false
+}

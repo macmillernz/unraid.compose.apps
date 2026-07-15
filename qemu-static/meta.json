@@ -1,0 +1,9 @@
+{
+  "displayName": "Qemu Static",
+  "shortname": "qemu-static",
+  "category": "Docker",
+  "description": "Run multiple architectures of Docker containers on an x86_64 or aarch64 host using QEMU static.",
+  "launchUrl": "http://[IP]",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/qemu-static/logo.png",
+  "autostart": false
+}

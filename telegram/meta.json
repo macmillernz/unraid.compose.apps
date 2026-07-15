@@ -1,0 +1,9 @@
+{
+  "displayName": "Telegram",
+  "shortname": "telegram",
+  "category": "Chat",
+  "description": "Telegram is a cloud-based mobile and desktop messaging app.",
+  "launchUrl": "http://[IP]:3000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/telegram/logo.png",
+  "autostart": false
+}

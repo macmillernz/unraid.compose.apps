@@ -1,0 +1,27 @@
+services:
+  pairdrop:
+    image: lscr.io/linuxserver/pairdrop:latest
+    container_name: pairdrop
+    environment:
+      PUID: 99
+      PGID: 100
+      TZ: ${TZ:-UTC}
+      RATE_LIMIT: ${RATE_LIMIT:-false}
+      WS_FALLBACK: ${WS_FALLBACK:-false}
+      RTC_CONFIG: ${RTC_CONFIG:-}
+      DEBUG_MODE: ${DEBUG_MODE:-false}
+    volumes:
+      - ${DATA_ROOT}:/config
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+
+# --- Example: put this stack on a custom/shared Docker network instead
+# of the default bridge network (e.g. to reach a reverse proxy or talk
+# to other stacks directly). Uncomment below, add the same "networks:"
+# list under every service above, and create the network first if it
+# doesn't already exist (docker network create <name>).
+#
+# networks:
+#   <name>:
+#     external: true

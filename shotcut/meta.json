@@ -1,0 +1,9 @@
+{
+  "displayName": "Shotcut",
+  "shortname": "shotcut",
+  "category": "Video Editor",
+  "description": "Shotcut is a free, open source, cross-platform video editor.",
+  "launchUrl": "http://[IP]:3000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/shotcut/logo.png",
+  "autostart": false
+}

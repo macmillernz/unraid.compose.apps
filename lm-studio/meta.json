@@ -1,0 +1,9 @@
+{
+  "displayName": "LM Studio",
+  "shortname": "lm-studio",
+  "category": "Remote Desktop",
+  "description": "LM Studio can run local AI models like gpt-oss, Llama, Gemma, Qwen, and DeepSeek privately on your computer.",
+  "launchUrl": "http://[IP]:3000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/lm-studio/logo.png",
+  "autostart": false
+}

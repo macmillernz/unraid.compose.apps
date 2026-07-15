@@ -1,0 +1,9 @@
+{
+  "displayName": "Manyfold",
+  "shortname": "manyfold",
+  "category": "3D Printing",
+  "description": "Manyfold is an open source, self-hosted web application for managing a collection of 3D models, particularly focused on 3D printing.",
+  "launchUrl": "http://[IP]:3214",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/manyfold/logo.png",
+  "autostart": false
+}

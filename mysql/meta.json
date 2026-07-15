@@ -1,0 +1,9 @@
+{
+  "displayName": "Mysql",
+  "shortname": "mysql",
+  "category": "General",
+  "description": "Mysql (linuxserver.io image).",
+  "launchUrl": "http://[IP]",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/mysql/logo.png",
+  "autostart": false
+}

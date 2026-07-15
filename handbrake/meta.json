@@ -1,0 +1,9 @@
+{
+  "displayName": "Handbrake",
+  "shortname": "handbrake",
+  "category": "Media Management",
+  "description": "HandBrake is an open-source tool, built by volunteers, for converting video from nearly any format to a selection of modern, widely supported codecs.",
+  "launchUrl": "http://[IP]:3000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/handbrake/logo.png",
+  "autostart": false
+}

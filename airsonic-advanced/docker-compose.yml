@@ -1,0 +1,28 @@
+services:
+  airsonic-advanced:
+    image: lscr.io/linuxserver/airsonic-advanced:latest
+    container_name: airsonic-advanced
+    environment:
+      PUID: 99
+      PGID: 100
+      TZ: ${TZ:-UTC}
+      CONTEXT_PATH: ${CONTEXT_PATH:-}
+      JAVA_OPTS: ${JAVA_OPTS:-}
+    volumes:
+      - ${DATA_ROOT}:/config
+      - ${MUSIC_ROOT}:/music
+      - ${PLAYLISTS_ROOT}:/playlists
+      - ${PODCASTS_ROOT}:/podcasts
+    ports:
+      - "4040:4040"
+    restart: unless-stopped
+
+# --- Example: put this stack on a custom/shared Docker network instead
+# of the default bridge network (e.g. to reach a reverse proxy or talk
+# to other stacks directly). Uncomment below, add the same "networks:"
+# list under every service above, and create the network first if it
+# doesn't already exist (docker network create <name>).
+#
+# networks:
+#   <name>:
+#     external: true

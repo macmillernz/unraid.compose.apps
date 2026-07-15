@@ -1,0 +1,9 @@
+{
+  "displayName": "Zen",
+  "shortname": "zen",
+  "category": "Web Browser",
+  "description": "Zen Browser is a free and open-source fork of Mozilla Firefox with a focus on privacy, customizability and design.",
+  "launchUrl": "http://[IP]:3000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/zen/logo.png",
+  "autostart": false
+}

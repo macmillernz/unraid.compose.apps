@@ -1,0 +1,9 @@
+{
+  "displayName": "Modmanager",
+  "shortname": "modmanager",
+  "category": "Docker",
+  "description": "Modmanager is a centralised tool for downloading and updating docker mods for all your other Linuxserver containers.",
+  "launchUrl": "http://[IP]",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/modmanager/logo.png",
+  "autostart": false
+}

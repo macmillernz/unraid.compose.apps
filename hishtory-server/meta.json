@@ -1,0 +1,9 @@
+{
+  "displayName": "hiSHtory Server",
+  "shortname": "hishtory-server",
+  "category": "Administration",
+  "description": "hiSHtory is a better shell history. It stores your shell history in context (what directory you ran the command in, whether it succeeded or failed, how long it took, etc). This is all stored locally and end-to-end encrypted for syncing to to all your other computers.",
+  "launchUrl": "http://[IP]:8080",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/hishtory-server/logo.png",
+  "autostart": false
+}

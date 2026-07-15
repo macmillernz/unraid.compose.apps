@@ -1,0 +1,9 @@
+{
+  "displayName": "QDirStat",
+  "shortname": "qdirstat",
+  "category": "Storage",
+  "description": "QDirStat Qt-based directory statistics: KDirStat without any KDE -- from the author of the original KDirStat.",
+  "launchUrl": "http://[IP]:3000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/qdirstat/logo.png",
+  "autostart": false
+}

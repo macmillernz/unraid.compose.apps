@@ -1,0 +1,9 @@
+{
+  "displayName": "Inkscape",
+  "shortname": "inkscape",
+  "category": "3D Modeling",
+  "description": "Inkscape is professional quality vector graphics software which runs on Linux, Mac OS X and Windows desktop computers.",
+  "launchUrl": "http://[IP]:3000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/inkscape/logo.png",
+  "autostart": false
+}

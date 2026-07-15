@@ -1,0 +1,9 @@
+{
+  "displayName": "Syslog Ng",
+  "shortname": "syslog-ng",
+  "category": "Monitoring",
+  "description": "syslog-ng allows you to flexibly collect, parse, classify, rewrite and correlate logs from across your infrastructure and store or route them to log analysis tools.",
+  "launchUrl": "http://[IP]:514",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/syslog-ng/logo.png",
+  "autostart": false
+}

@@ -1,0 +1,9 @@
+{
+  "displayName": "OpenVSCode Server",
+  "shortname": "openvscode-server",
+  "category": "Programming",
+  "description": "OpenVSCode Server provides a version of VS Code that runs a server on a remote machine and allows access through a modern web browser.",
+  "launchUrl": "http://[IP]:3000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/openvscode-server/logo.png",
+  "autostart": false
+}

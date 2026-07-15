@@ -1,0 +1,9 @@
+{
+  "displayName": "Unifi",
+  "shortname": "unifi",
+  "category": "General",
+  "description": "Unifi (linuxserver.io image).",
+  "launchUrl": "http://[IP]",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/unifi/logo.png",
+  "autostart": false
+}

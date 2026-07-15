@@ -1,0 +1,27 @@
+services:
+  kasm:
+    image: lscr.io/linuxserver/kasm:latest
+    container_name: kasm
+    environment:
+      PUID: 99
+      PGID: 100
+      TZ: ${TZ:-UTC}
+      DOCKER_HUB_USERNAME: ${DOCKER_HUB_USERNAME:-USER}
+      DOCKER_HUB_PASSWORD: ${DOCKER_HUB_PASSWORD:?required}
+      DOCKER_MTU: ${DOCKER_MTU:-1500}
+    volumes:
+      - ${OPT_ROOT}:/opt
+    ports:
+      - "3000:3000"
+      - "443:443"
+    restart: unless-stopped
+
+# --- Example: put this stack on a custom/shared Docker network instead
+# of the default bridge network (e.g. to reach a reverse proxy or talk
+# to other stacks directly). Uncomment below, add the same "networks:"
+# list under every service above, and create the network first if it
+# doesn't already exist (docker network create <name>).
+#
+# networks:
+#   <name>:
+#     external: true

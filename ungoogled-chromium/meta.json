@@ -1,0 +1,9 @@
+{
+  "displayName": "Ungoogled Chromium",
+  "shortname": "ungoogled-chromium",
+  "category": "Web Browser",
+  "description": "Ungoogled Chromium is Google Chromium, sans dependency on Google web services.",
+  "launchUrl": "http://[IP]:3000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/ungoogled-chromium/logo.png",
+  "autostart": false
+}

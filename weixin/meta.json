@@ -1,0 +1,9 @@
+{
+  "displayName": "Weixin",
+  "shortname": "weixin",
+  "category": "Chat",
+  "description": "Weixin (WeChat) is an instant messaging, social media, and mobile payment app developed by Tencent.",
+  "launchUrl": "http://[IP]:3000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/weixin/logo.png",
+  "autostart": false
+}

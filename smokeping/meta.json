@@ -1,0 +1,9 @@
+{
+  "displayName": "Smokeping",
+  "shortname": "smokeping",
+  "category": "Monitoring",
+  "description": "Smokeping keeps track of your network latency. For a full example of what this application is capable of visit UCDavis.",
+  "launchUrl": "http://[IP]:80",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/smokeping/logo.png",
+  "autostart": false
+}

@@ -1,0 +1,9 @@
+{
+  "displayName": "Limnoria",
+  "shortname": "limnoria",
+  "category": "IRC",
+  "description": "Limnoria A robust, full-featured, and user/programmer-friendly Python IRC bot, with many existing plugins. Successor of the well-known Supybot.",
+  "launchUrl": "http://[IP]:8080",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/limnoria/logo.png",
+  "autostart": false
+}

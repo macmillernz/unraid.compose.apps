@@ -1,0 +1,9 @@
+{
+  "displayName": "Helium",
+  "shortname": "helium",
+  "category": "Web Browser",
+  "description": "Helium is a Chromium-based web browser made for people, with love. Privacy-first with unbiased ad-blocking.",
+  "launchUrl": "http://[IP]:3000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/helium/logo.png",
+  "autostart": false
+}

@@ -1,0 +1,9 @@
+{
+  "displayName": "Webgrabplus",
+  "shortname": "webgrabplus",
+  "category": "Media Tools",
+  "description": "Webgrabplus is a multi-site incremental xmltv epg grabber. It collects tv-program guide data from selected tvguide sites for your favourite channels.",
+  "launchUrl": "http://[IP]",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/webgrabplus/logo.png",
+  "autostart": false
+}

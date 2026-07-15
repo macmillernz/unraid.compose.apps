@@ -1,0 +1,9 @@
+{
+  "displayName": "Flood",
+  "shortname": "flood",
+  "category": "General",
+  "description": "Flood (linuxserver.io image).",
+  "launchUrl": "http://[IP]",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/flood/logo.png",
+  "autostart": false
+}

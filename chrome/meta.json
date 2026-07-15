@@ -1,0 +1,9 @@
+{
+  "displayName": "Chrome",
+  "shortname": "chrome",
+  "category": "Web Browser",
+  "description": "Chrome is the official web browser from Google, built to be fast, secure, and customizable.",
+  "launchUrl": "http://[IP]:3000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/chrome/logo.png",
+  "autostart": false
+}

@@ -1,0 +1,31 @@
+services:
+  librespeed:
+    image: lscr.io/linuxserver/librespeed:latest
+    container_name: librespeed
+    environment:
+      PUID: 99
+      PGID: 100
+      TZ: ${TZ:-UTC}
+      CUSTOM_RESULTS: ${CUSTOM_RESULTS:-false}
+      DB_TYPE: ${DB_TYPE:-sqlite}
+      DB_NAME: ${DB_NAME:-DB_NAME}
+      DB_HOSTNAME: ${DB_HOSTNAME:-DB_HOSTNAME}
+      DB_USERNAME: ${DB_USERNAME:-DB_USERNAME}
+      DB_PASSWORD: ${DB_PASSWORD:?required}
+      DB_PORT: ${DB_PORT:-DB_PORT}
+      IPINFO_APIKEY: ${IPINFO_APIKEY:?required}
+    volumes:
+      - ${DATA_ROOT}:/config
+    ports:
+      - "80:80"
+    restart: unless-stopped
+
+# --- Example: put this stack on a custom/shared Docker network instead
+# of the default bridge network (e.g. to reach a reverse proxy or talk
+# to other stacks directly). Uncomment below, add the same "networks:"
+# list under every service above, and create the network first if it
+# doesn't already exist (docker network create <name>).
+#
+# networks:
+#   <name>:
+#     external: true

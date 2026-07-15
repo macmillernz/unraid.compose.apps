@@ -1,0 +1,9 @@
+{
+  "displayName": "Kicad",
+  "shortname": "kicad",
+  "category": "3D Modeling",
+  "description": "KiCad - A Cross Platform and Open Source Electronics Design Automation Suite.",
+  "launchUrl": "http://[IP]:3000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/kicad/logo.png",
+  "autostart": false
+}

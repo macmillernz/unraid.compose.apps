@@ -1,0 +1,9 @@
+{
+  "displayName": "Keepassxc",
+  "shortname": "keepassxc",
+  "category": "Password Manager",
+  "description": "KeePassXC is a free and open-source password manager. It started as a community fork of KeePassX (itself a cross-platform port of KeePass).",
+  "launchUrl": "http://[IP]:3000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/keepassxc/logo.png",
+  "autostart": false
+}

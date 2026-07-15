@@ -1,0 +1,9 @@
+{
+  "displayName": "Audacity",
+  "shortname": "audacity",
+  "category": "Audio Processing",
+  "description": "Audacity is an easy-to-use, multi-track audio editor and recorder. Developed by a group of volunteers as open source.",
+  "launchUrl": "http://[IP]:3000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/audacity/logo.png",
+  "autostart": false
+}

@@ -1,0 +1,9 @@
+{
+  "displayName": "Sickbeard",
+  "shortname": "sickbeard",
+  "category": "General",
+  "description": "Sickbeard (linuxserver.io image).",
+  "launchUrl": "http://[IP]",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/sickbeard/logo.png",
+  "autostart": false
+}

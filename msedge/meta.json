@@ -1,0 +1,9 @@
+{
+  "displayName": "Microsoft Edge",
+  "shortname": "msedge",
+  "category": "Web Browser",
+  "description": "Microsoft Edge is a cross-platform web browser developed by Microsoft and based on Chromium.",
+  "launchUrl": "http://[IP]:3000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/msedge/logo.png",
+  "autostart": false
+}

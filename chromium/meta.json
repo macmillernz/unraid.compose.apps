@@ -1,0 +1,9 @@
+{
+  "displayName": "Chromium",
+  "shortname": "chromium",
+  "category": "Web Browser",
+  "description": "Chromium is an open-source browser project that aims to build a safer, faster, and more stable way for all users to experience the web.",
+  "launchUrl": "http://[IP]:3000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/chromium/logo.png",
+  "autostart": false
+}

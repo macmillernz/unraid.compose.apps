@@ -1,0 +1,9 @@
+{
+  "displayName": "Xbackbone",
+  "shortname": "xbackbone",
+  "category": "File Sharing",
+  "description": "Xbackbone is a simple, self-hosted, lightweight PHP file manager that support the instant sharing tool ShareX and *NIX systems. It supports uploading and displaying images, GIF, video, code, formatted text, and file downloading and uploading. Also have a web UI with multi user management, past uploads history and search support.",
+  "launchUrl": "http://[IP]:80",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/xbackbone/logo.png",
+  "autostart": false
+}

@@ -1,0 +1,9 @@
+{
+  "displayName": "GitHub Desktop",
+  "shortname": "github-desktop",
+  "category": "Programming",
+  "description": "Github Desktop is an open source Electron-based GitHub app. It is written in TypeScript and uses React.",
+  "launchUrl": "http://[IP]:3000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/github-desktop/logo.png",
+  "autostart": false
+}

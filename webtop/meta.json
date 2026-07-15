@@ -1,0 +1,9 @@
+{
+  "displayName": "Webtop",
+  "shortname": "webtop",
+  "category": "Remote Desktop",
+  "description": "Webtop - Alpine, Ubuntu, Fedora, and Arch based containers containing full desktop environments in officially supported flavors accessible via any modern web browser.",
+  "launchUrl": "http://[IP]:3000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/webtop/logo.png",
+  "autostart": false
+}

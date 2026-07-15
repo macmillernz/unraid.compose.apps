@@ -1,0 +1,37 @@
+services:
+  healthchecks:
+    image: lscr.io/linuxserver/healthchecks:latest
+    container_name: healthchecks
+    environment:
+      PUID: 99
+      PGID: 100
+      TZ: ${TZ:-UTC}
+      ALLOWED_HOSTS: ${ALLOWED_HOSTS:-}
+      APPRISE_ENABLED: ${APPRISE_ENABLED:-False}
+      CSRF_TRUSTED_ORIGINS: ${CSRF_TRUSTED_ORIGINS:-}
+      DEBUG: ${DEBUG:-True}
+      DEFAULT_FROM_EMAIL: ${DEFAULT_FROM_EMAIL:-}
+      EMAIL_HOST: ${EMAIL_HOST:-}
+      EMAIL_PORT: ${EMAIL_PORT:-}
+      EMAIL_HOST_USER: ${EMAIL_HOST_USER:-}
+      EMAIL_HOST_PASSWORD: ${EMAIL_HOST_PASSWORD:?required}
+      EMAIL_USE_TLS: ${EMAIL_USE_TLS:-}
+      INTEGRATIONS_ALLOW_PRIVATE_IPS: ${INTEGRATIONS_ALLOW_PRIVATE_IPS:-}
+      PING_EMAIL_DOMAIN: ${PING_EMAIL_DOMAIN:-}
+      RP_ID: ${RP_ID:-}
+      SITE_LOGO_URL: ${SITE_LOGO_URL:-}
+    volumes:
+      - ${DATA_ROOT}:/config
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+
+# --- Example: put this stack on a custom/shared Docker network instead
+# of the default bridge network (e.g. to reach a reverse proxy or talk
+# to other stacks directly). Uncomment below, add the same "networks:"
+# list under every service above, and create the network first if it
+# doesn't already exist (docker network create <name>).
+#
+# networks:
+#   <name>:
+#     external: true

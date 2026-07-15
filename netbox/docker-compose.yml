@@ -1,0 +1,31 @@
+services:
+  netbox:
+    image: lscr.io/linuxserver/netbox:latest
+    container_name: netbox
+    environment:
+      PUID: 99
+      PGID: 100
+      TZ: ${TZ:-UTC}
+      BASE_PATH: ${BASE_PATH:-}
+      CSRF_TRUSTED_ORIGINS: ${CSRF_TRUSTED_ORIGINS:-}
+      REMOTE_AUTH_ENABLED: ${REMOTE_AUTH_ENABLED:-}
+      REMOTE_AUTH_BACKEND: ${REMOTE_AUTH_BACKEND:-}
+      REMOTE_AUTH_HEADER: ${REMOTE_AUTH_HEADER:-}
+      REMOTE_AUTH_AUTO_CREATE_USER: ${REMOTE_AUTH_AUTO_CREATE_USER:-}
+      REMOTE_AUTH_DEFAULT_GROUPS: ${REMOTE_AUTH_DEFAULT_GROUPS:-}
+      REMOTE_AUTH_DEFAULT_PERMISSIONS: ${REMOTE_AUTH_DEFAULT_PERMISSIONS:-}
+    volumes:
+      - ${DATA_ROOT}:/config
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+
+# --- Example: put this stack on a custom/shared Docker network instead
+# of the default bridge network (e.g. to reach a reverse proxy or talk
+# to other stacks directly). Uncomment below, add the same "networks:"
+# list under every service above, and create the network first if it
+# doesn't already exist (docker network create <name>).
+#
+# networks:
+#   <name>:
+#     external: true

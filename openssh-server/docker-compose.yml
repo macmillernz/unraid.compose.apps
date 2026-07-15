@@ -1,0 +1,33 @@
+services:
+  openssh-server:
+    image: lscr.io/linuxserver/openssh-server:latest
+    container_name: openssh-server
+    environment:
+      PUID: 99
+      PGID: 100
+      TZ: ${TZ:-UTC}
+      PUBLIC_KEY: ${PUBLIC_KEY:-yourpublickey}
+      PUBLIC_KEY_FILE: ${PUBLIC_KEY_FILE:-/path/to/file}
+      PUBLIC_KEY_DIR: ${PUBLIC_KEY_DIR:-/path/to/directory/containing/_only_/pubkeys}
+      PUBLIC_KEY_URL: ${PUBLIC_KEY_URL:-https://github.com/username.keys}
+      SUDO_ACCESS: ${SUDO_ACCESS:-false}
+      PASSWORD_ACCESS: ${PASSWORD_ACCESS:-false}
+      USER_PASSWORD: ${USER_PASSWORD:?required}
+      USER_PASSWORD_FILE: ${USER_PASSWORD_FILE:-/path/to/file}
+      USER_NAME: ${USER_NAME:-linuxserver.io}
+      LOG_STDOUT: ${LOG_STDOUT:-}
+    volumes:
+      - ${DATA_ROOT}:/config
+    ports:
+      - "2222:2222"
+    restart: unless-stopped
+
+# --- Example: put this stack on a custom/shared Docker network instead
+# of the default bridge network (e.g. to reach a reverse proxy or talk
+# to other stacks directly). Uncomment below, add the same "networks:"
+# list under every service above, and create the network first if it
+# doesn't already exist (docker network create <name>).
+#
+# networks:
+#   <name>:
+#     external: true

@@ -1,0 +1,40 @@
+services:
+  mastodon:
+    image: lscr.io/linuxserver/mastodon:latest
+    container_name: mastodon
+    environment:
+      PUID: 99
+      PGID: 100
+      TZ: ${TZ:-UTC}
+      WEB_DOMAIN: ${WEB_DOMAIN:-mastodon.example.com}
+      ES_HOST: ${ES_HOST:-es}
+      ES_PORT: ${ES_PORT:-9200}
+      ES_USER: ${ES_USER:-elastic}
+      ES_PASS: ${ES_PASS:?required}
+      S3_BUCKET: ${S3_BUCKET:-}
+      AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID:-}
+      AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY:?required}
+      S3_ALIAS_HOST: ${S3_ALIAS_HOST:-}
+      SIDEKIQ_ONLY: ${SIDEKIQ_ONLY:-false}
+      SIDEKIQ_QUEUE: ${SIDEKIQ_QUEUE:-}
+      SIDEKIQ_DEFAULT: ${SIDEKIQ_DEFAULT:-false}
+      SIDEKIQ_THREADS: ${SIDEKIQ_THREADS:-5}
+      DB_POOL: ${DB_POOL:-5}
+      NO_CHOWN: ${NO_CHOWN:-}
+      MASTODON_PROMETHEUS_EXPORTER_ENABLED: ${MASTODON_PROMETHEUS_EXPORTER_ENABLED:-}
+    volumes:
+      - ${DATA_ROOT}:/config
+    ports:
+      - "80:80"
+      - "443:443"
+    restart: unless-stopped
+
+# --- Example: put this stack on a custom/shared Docker network instead
+# of the default bridge network (e.g. to reach a reverse proxy or talk
+# to other stacks directly). Uncomment below, add the same "networks:"
+# list under every service above, and create the network first if it
+# doesn't already exist (docker network create <name>).
+#
+# networks:
+#   <name>:
+#     external: true

@@ -1,0 +1,9 @@
+{
+  "displayName": "Piper",
+  "shortname": "piper",
+  "category": "Machine Learning",
+  "description": "Piper is a fast, local neural text to speech system that sounds great and is optimized for the Raspberry Pi 4. This container provides a Wyoming protocol server for Piper.",
+  "launchUrl": "http://[IP]:10200",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/piper/logo.png",
+  "autostart": false
+}

@@ -1,0 +1,9 @@
+{
+  "displayName": "Minisatip",
+  "shortname": "minisatip",
+  "category": "Media Tools",
+  "description": "Minisatip is a multi-threaded satip server version 1.2 that runs under Linux and it was tested with DVB-S, DVB-S2, DVB-T, DVB-T2, DVB-C, DVB-C2, ATSC and ISDB-T cards.",
+  "launchUrl": "http://[IP]:8875",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/minisatip/logo.png",
+  "autostart": false
+}

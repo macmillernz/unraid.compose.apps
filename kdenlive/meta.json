@@ -1,0 +1,9 @@
+{
+  "displayName": "Kdenlive",
+  "shortname": "kdenlive",
+  "category": "Video Editor",
+  "description": "Kdenlive is a powerful free and open source cross-platform video editing program made by the KDE community. Feature rich and production ready.",
+  "launchUrl": "http://[IP]:3000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/kdenlive/logo.png",
+  "autostart": false
+}

@@ -1,0 +1,9 @@
+{
+  "displayName": "Budge",
+  "shortname": "budge",
+  "category": "Finance",
+  "description": "budge is an open source 'budgeting with envelopes' personal finance app.",
+  "launchUrl": "http://[IP]:80",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/budge/logo.png",
+  "autostart": false
+}

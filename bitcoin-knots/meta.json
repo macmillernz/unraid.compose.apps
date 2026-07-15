@@ -1,0 +1,9 @@
+{
+  "displayName": "Bitcoin Knots",
+  "shortname": "bitcoin-knots",
+  "category": "Finance",
+  "description": "Bitcoin Knots can be used as a desktop client for regular payments or as a full node server utility for merchants and other payment services.",
+  "launchUrl": "http://[IP]:3000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/bitcoin-knots/logo.png",
+  "autostart": false
+}

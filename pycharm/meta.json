@@ -1,0 +1,9 @@
+{
+  "displayName": "Pycharm",
+  "shortname": "pycharm",
+  "category": "Programming",
+  "description": "PyCharm offers out-of-the-box support for Python, databases, Jupyter, Git, Conda, PyTorch, TensorFlow, Hugging Face, Django, Flask, FastAPI, and more.",
+  "launchUrl": "http://[IP]:3000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/pycharm/logo.png",
+  "autostart": false
+}

@@ -1,0 +1,9 @@
+{
+  "displayName": "Onlyoffice",
+  "shortname": "onlyoffice",
+  "category": "Documents",
+  "description": "ONLYOFFICE provides a full range of tools to create, edit and collaborate on text documents, spreadsheets, presentations, PDF forms and regular PDF files on web, desktop and mobile platforms.",
+  "launchUrl": "http://[IP]:3000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/onlyoffice/logo.png",
+  "autostart": false
+}

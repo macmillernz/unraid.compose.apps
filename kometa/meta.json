@@ -1,0 +1,9 @@
+{
+  "displayName": "Kometa",
+  "shortname": "kometa",
+  "category": "Media Management",
+  "description": "Kometa is a powerful tool designed to give you complete control over your media libraries. With Kometa, you can take your customization to the next level, with granular control over metadata, collections, overlays, and much more.",
+  "launchUrl": "http://[IP]",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/kometa/logo.png",
+  "autostart": false
+}

@@ -1,0 +1,9 @@
+{
+  "displayName": "Spotube",
+  "shortname": "spotube",
+  "category": "Music",
+  "description": "Spotube is an open source, cross-platform Spotify client compatible across multiple platforms utilizing Spotify's data API and YouTube, Piped.video or JioSaavn as an audio source, eliminating the need for Spotify Premium",
+  "launchUrl": "http://[IP]:3000",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/spotube/logo.png",
+  "autostart": false
+}

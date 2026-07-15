@@ -1,0 +1,32 @@
+services:
+  nano:
+    image: lscr.io/linuxserver/nano:latest
+    container_name: nano
+    environment:
+      PUID: 99
+      PGID: 100
+      TZ: ${TZ:-UTC}
+      PEER_HOST: ${PEER_HOST:-localhost}
+      LIVE_GENESIS_PUB: ${LIVE_GENESIS_PUB:-GENESIS_PUBLIC}
+      LIVE_GENESIS_ACCOUNT: ${LIVE_GENESIS_ACCOUNT:-nano_xxxxxx}
+      LIVE_GENESIS_WORK: ${LIVE_GENESIS_WORK:-WORK_FOR_BLOCK}
+      LIVE_GENESIS_SIG: ${LIVE_GENESIS_SIG:-BLOCK_SIGNATURE}
+      CLI_OPTIONS: ${CLI_OPTIONS:---config node.enable_voting=true}
+      LMDB_BOOTSTRAP_URL: ${LMDB_BOOTSTRAP_URL:-http://example.com/Nano_64_version_20.7z}
+    volumes:
+      - ${DATA_ROOT}:/config
+    ports:
+      - "8075:8075"
+      - "7076:3000"
+      - "7077:3001"
+    restart: unless-stopped
+
+# --- Example: put this stack on a custom/shared Docker network instead
+# of the default bridge network (e.g. to reach a reverse proxy or talk
+# to other stacks directly). Uncomment below, add the same "networks:"
+# list under every service above, and create the network first if it
+# doesn't already exist (docker network create <name>).
+#
+# networks:
+#   <name>:
+#     external: true

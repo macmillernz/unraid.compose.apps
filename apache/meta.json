@@ -1,0 +1,9 @@
+{
+  "displayName": "Apache",
+  "shortname": "apache",
+  "category": "General",
+  "description": "Apache (linuxserver.io image).",
+  "launchUrl": "http://[IP]",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/apache/logo.png",
+  "autostart": false
+}

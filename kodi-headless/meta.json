@@ -1,9 +1,0 @@
-{
-  "displayName": "Kodi (Headless)",
-  "shortname": "kodi-headless",
-  "category": "General",
-  "description": "Kodi (Headless) (linuxserver.io image).",
-  "launchUrl": "http://[IP]",
-  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/kodi-headless/logo.png",
-  "autostart": false
-}

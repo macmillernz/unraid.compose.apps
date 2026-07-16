@@ -1,9 +1,0 @@
-{
-  "displayName": "Readarr",
-  "shortname": "readarr",
-  "category": "General",
-  "description": "Readarr (linuxserver.io image).",
-  "launchUrl": "http://[IP]",
-  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/readarr/logo.png",
-  "autostart": false
-}

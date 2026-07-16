@@ -1,9 +1,0 @@
-{
-  "displayName": "Ci Debug",
-  "shortname": "ci-debug",
-  "category": "General",
-  "description": "Ci Debug (linuxserver.io image).",
-  "launchUrl": "http://[IP]",
-  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/ci-debug/logo.png",
-  "autostart": false
-}

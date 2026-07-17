@@ -1,0 +1,9 @@
+{
+  "displayName": "Cloudflare Tunnel",
+  "shortname": "cloudflared",
+  "category": "Network",
+  "description": "Runs a Cloudflare Tunnel (cloudflared), exposing local services to the internet through Cloudflare's network without opening any inbound ports on your router.",
+  "launchUrl": "http://[IP]",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/cloudflared/logo.png",
+  "autostart": false
+}

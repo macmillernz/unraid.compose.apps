@@ -90,6 +90,8 @@ services:
       --email ${LETSENCRYPT_EMAIL:?email required}
       --agree-tos
       --no-eff-email
+      --keep-until-expiring
+      --non-interactive
 
 # --- Example: put this stack on a custom/shared Docker network instead
 # of the default bridge network (e.g. to reach a reverse proxy or talk

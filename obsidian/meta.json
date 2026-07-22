@@ -6,6 +6,6 @@
   "launchUrl": "http://[IP]:3000",
   "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/obsidian/logo.png",
   "autostart": false,
-  "version": "2026.07.22.2",
-  "changelog": "TEST CHANGE - added a fake env var (FAKE_TEST_VAR) to exercise the catalog update-merge feature. Not a real Obsidian setting."
+  "version": "2026.07.22.3",
+  "changelog": "TEST CHANGE - removed the fake env var (FAKE_TEST_VAR) to exercise the catalog update-merge's variable-removal path. Not a real Obsidian setting."
 }

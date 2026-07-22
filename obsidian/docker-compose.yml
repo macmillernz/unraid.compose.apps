@@ -6,6 +6,9 @@ services:
       PUID: 99
       PGID: 100
       TZ: ${TZ:-UTC}
+      # TEST VAR - added to exercise the catalog update-merge feature,
+      # not a real Obsidian setting. Safe to ignore/remove.
+      FAKE_TEST_VAR: ${FAKE_TEST_VAR:-hello}
     volumes:
       - ${DATA_ROOT}:/config
     ports:

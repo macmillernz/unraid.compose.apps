@@ -5,5 +5,6 @@
   "description": "SickGear provides management of TV shows and/or Anime, it detects new episodes, links downloader apps, and more.. For more information on SickGear visit their website and check it out: https://github.com/SickGear/SickGear",
   "launchUrl": "http://[IP]:8081",
   "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/sickgear/logo.png",
-  "autostart": false
+  "autostart": false,
+  "version": "2026.07.22.1"
 }

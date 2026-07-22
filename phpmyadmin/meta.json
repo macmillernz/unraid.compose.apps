@@ -5,5 +5,6 @@
   "description": "phpMyAdmin is a free software tool written in PHP, intended to handle the administration of MySQL over the Web. phpMyAdmin supports a wide range of operations on MySQL and MariaDB.",
   "launchUrl": "http://[IP]:80",
   "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/phpmyadmin/logo.png",
-  "autostart": false
+  "autostart": false,
+  "version": "2026.07.22.1"
 }

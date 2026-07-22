@@ -5,5 +5,6 @@
   "description": "GIMP is a free and open-source raster graphics editor used for image manipulation (retouching) and image editing, free-form drawing, transcoding between different image file formats, and more specialized tasks. It is extensible by means of plugins, and scriptable.",
   "launchUrl": "http://[IP]:3000",
   "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/gimp/logo.png",
-  "autostart": false
+  "autostart": false,
+  "version": "2026.07.22.1"
 }

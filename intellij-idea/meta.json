@@ -5,5 +5,6 @@
   "description": "IntelliJ IDEA helps you write code faster with tools that eliminate tedious tasks and let you focus on what matters \u2013 building great software.",
   "launchUrl": "http://[IP]:3000",
   "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/intellij-idea/logo.png",
-  "autostart": false
+  "autostart": false,
+  "version": "2026.07.22.1"
 }

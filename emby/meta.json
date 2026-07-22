@@ -5,5 +5,6 @@
   "description": "Emby organizes video, music, live TV, and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices. This container is packaged as a standalone emby Media Server.",
   "launchUrl": "http://[IP]:8096",
   "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/emby/logo.png",
-  "autostart": false
+  "autostart": false,
+  "version": "2026.07.22.1"
 }

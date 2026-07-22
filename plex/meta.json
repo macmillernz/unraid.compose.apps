@@ -5,5 +5,6 @@
   "description": "Plex Media Server organizes and streams your movies, TV shows, and music library to any device.",
   "launchUrl": "http://[IP]:32400/web",
   "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/plex/logo.png",
-  "autostart": false
+  "autostart": false,
+  "version": "2026.07.22.1"
 }

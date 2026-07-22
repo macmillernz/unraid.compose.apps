@@ -5,5 +5,6 @@
   "description": "Web app for browsing, reading, and managing an existing Calibre ebook library from any browser.",
   "launchUrl": "http://[IP]:8083",
   "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/calibre-web/logo.png",
-  "autostart": false
+  "autostart": false,
+  "version": "2026.07.22.1"
 }

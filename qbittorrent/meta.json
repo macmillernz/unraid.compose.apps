@@ -5,5 +5,6 @@
   "description": "Open-source BitTorrent client with a full-featured web UI, no ads, no bundled bloat.",
   "launchUrl": "http://[IP]:8080",
   "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/qbittorrent/logo.png",
-  "autostart": false
+  "autostart": false,
+  "version": "2026.07.22.1"
 }

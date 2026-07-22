@@ -5,5 +5,6 @@
   "description": "Flood (linuxserver.io image).",
   "launchUrl": "http://[IP]",
   "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/flood/logo.png",
-  "autostart": false
+  "autostart": false,
+  "version": "2026.07.22.1"
 }

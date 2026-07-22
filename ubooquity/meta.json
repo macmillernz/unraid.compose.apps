@@ -5,5 +5,6 @@
   "description": "Lightweight home server for comics and ebooks - browse and read from a tablet, e-reader, phone, or browser.",
   "launchUrl": "http://[IP]:2202/ubooquity",
   "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/ubooquity/logo.png",
-  "autostart": false
+  "autostart": false,
+  "version": "2026.07.22.1"
 }

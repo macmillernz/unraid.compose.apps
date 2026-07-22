@@ -5,5 +5,6 @@
   "description": "The Brave browser is a fast, private and secure web browser for PC, Mac and mobile.",
   "launchUrl": "http://[IP]:3000",
   "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/brave/logo.png",
-  "autostart": false
+  "autostart": false,
+  "version": "2026.07.22.1"
 }

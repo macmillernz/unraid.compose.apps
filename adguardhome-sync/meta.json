@@ -5,5 +5,6 @@
   "description": "AdGuardHome Sync is a tool to synchronize AdGuardHome config to replica instances.",
   "launchUrl": "http://[IP]:8080",
   "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/adguardhome-sync/logo.png",
-  "autostart": false
+  "autostart": false,
+  "version": "2026.07.22.1"
 }

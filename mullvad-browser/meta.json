@@ -5,5 +5,6 @@
   "description": "The Mullvad Browser is a privacy-focused web browser developed in a collaboration between Mullvad VPN and the Tor Project. It\u2019s designed to minimize tracking and fingerprinting. You could say it\u2019s a Tor Browser to use without the Tor Network. Instead, you can use it with a trustworthy VPN.",
   "launchUrl": "http://[IP]:3000",
   "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/mullvad-browser/logo.png",
-  "autostart": false
+  "autostart": false,
+  "version": "2026.07.22.1"
 }

@@ -5,5 +5,6 @@
   "description": "Flexget is a multipurpose automation tool for all of your media.",
   "launchUrl": "http://[IP]:5050",
   "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/flexget/logo.png",
-  "autostart": false
+  "autostart": false,
+  "version": "2026.07.22.1"
 }

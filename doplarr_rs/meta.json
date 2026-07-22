@@ -5,5 +5,6 @@
   "description": "Doplarr (Rust) is a Discord bot for requesting media through *arr backends, written in Rust.",
   "launchUrl": "http://[IP]",
   "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/doplarr_rs/logo.png",
-  "autostart": false
+  "autostart": false,
+  "version": "2026.07.22.1"
 }

@@ -5,5 +5,6 @@
   "description": "Proxy server that translates queries from apps like Sonarr/Radarr into torrent/usenet tracker-specific searches.",
   "launchUrl": "http://[IP]:9117",
   "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/jackett/logo.png",
-  "autostart": false
+  "autostart": false,
+  "version": "2026.07.22.1"
 }

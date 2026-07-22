@@ -5,5 +5,6 @@
   "description": "Open-source identity provider with SSO, MFA, and forward-auth/proxy support for your other self-hosted apps.",
   "launchUrl": "http://[IP]:9000/if/flow/initial-setup/",
   "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/authentik/logo.png",
-  "autostart": false
+  "autostart": false,
+  "version": "2026.07.22.1"
 }

@@ -5,5 +5,6 @@
   "description": "Fail2Ban is a daemon to ban hosts that cause multiple authentication errors.",
   "launchUrl": "http://[IP]",
   "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/fail2ban/logo.png",
-  "autostart": false
+  "autostart": false,
+  "version": "2026.07.22.1"
 }

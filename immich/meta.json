@@ -5,5 +5,6 @@
   "description": "Self-hosted photo and video backup - a Google Photos alternative with mobile apps and facial recognition.",
   "launchUrl": "http://[IP]:2283",
   "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/immich/logo.png",
-  "autostart": false
+  "autostart": false,
+  "version": "2026.07.22.1"
 }

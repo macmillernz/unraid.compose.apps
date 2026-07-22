@@ -5,5 +5,6 @@
   "description": "Companion app to Sonarr/Radarr that automatically finds and downloads subtitles for your movies and TV shows.",
   "launchUrl": "http://[IP]:6767",
   "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/bazarr/logo.png",
-  "autostart": false
+  "autostart": false,
+  "version": "2026.07.22.1"
 }

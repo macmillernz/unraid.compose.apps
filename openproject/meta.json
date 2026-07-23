@@ -1,0 +1,10 @@
+{
+  "displayName": "OpenProject",
+  "shortname": "openproject",
+  "category": "Productivity",
+  "description": "Open-source project management and collaboration software - Gantt charts, agile/Scrum boards, bug tracking, wikis, and time tracking. Uses the official all-in-one image, which bundles its own PostgreSQL and memcached internally, so this stack is fully self-contained.",
+  "launchUrl": "http://[IP]:8080",
+  "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/openproject/logo.png",
+  "autostart": false,
+  "version": "2026.07.23.1"
+}

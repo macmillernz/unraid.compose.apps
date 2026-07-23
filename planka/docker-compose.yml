@@ -16,7 +16,17 @@ services:
       timeout: 5s
     restart: unless-stopped
     volumes:
-      - ${DATA_ROOT}/db:/var/lib/postgresql/data
+      # Deliberately NOT ${DATA_ROOT}/db - the planka service below mounts
+      # the whole of ${DATA_ROOT} as /config with PUID/PGID set, and LSIO
+      # images recursively fix their mounted volume's ownership to match
+      # PUID/PGID on every start. If the database lived inside
+      # ${DATA_ROOT}, that pass would sweep up this nested directory too
+      # and reset it away from postgres's own required ownership (its
+      # internal "postgres" user, not 99:100) every time the planka
+      # container restarts - confirmed live: this exact nesting silently
+      # flips db/ from 70:70 to 99:100 the moment planka starts, breaking
+      # Postgres with "Permission denied" reading its own files.
+      - ${DB_DATA_ROOT}:/var/lib/postgresql/data
 
   planka:
     image: lscr.io/linuxserver/planka:latest

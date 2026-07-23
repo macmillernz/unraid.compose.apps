@@ -6,5 +6,6 @@
   "launchUrl": "http://[IP]:1337",
   "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/planka/logo.png",
   "autostart": false,
-  "version": "2026.07.22.1"
+  "version": "2026.07.22.2",
+  "changelog": "Fixed a real bug: the database's data directory was nested inside DATA_ROOT, which the planka LSIO container also mounts and recursively re-owns to PUID/PGID on every start - this silently broke Postgres's own required ownership after every restart. The database now uses its own DB_DATA_ROOT path, outside DATA_ROOT entirely. Add DB_DATA_ROOT=/mnt/user/appdata/planka-db to your .env after updating."
 }

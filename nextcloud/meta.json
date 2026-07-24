@@ -6,5 +6,6 @@
   "launchUrl": "http://[IP]:8080",
   "logoUrl": "https://raw.githubusercontent.com/macmillernz/unraid.compose.apps/refs/heads/main/nextcloud/logo.png",
   "autostart": false,
-  "version": "2026.07.22.1"
+  "version": "2026.07.22.2",
+  "changelog": "Added reverse-proxy support (OVERWRITEHOST, OVERWRITEPROTOCOL, OVERWRITECLIURL, TRUSTED_PROXIES) to .env - fixes an HTTP 400 'Access through untrusted domain' error when running Nextcloud behind a reverse proxy (e.g. Authentik's proxy provider, Nginx Proxy Manager, Traefik)."
 }
